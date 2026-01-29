@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teclado Numérico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Ingresa el código</h2>
+
+        <!-- Pantalla -->
+        <div id="screen" class="screen"></div>
+
+        <!-- Mensaje error -->
+        <p id="message" class="message"></p>
+
+        <!-- Teclado -->
+        <div class="keyboard">
+            <button onclick="addNumber(1)">1</button>
+            <button onclick="addNumber(2)">2</button>
+            <button onclick="addNumber(3)">3</button>
+            <button onclick="addNumber(4)">4</button>
+            <button onclick="addNumber(5)">5</button>
+            <button onclick="addNumber(6)">6</button>
+            <button onclick="addNumber(7)">7</button>
+            <button onclick="addNumber(8)">8</button>
+            <button onclick="addNumber(9)">9</button>
+        </div>
+
+        <!-- Botones -->
+        <div class="actions">
+            <button onclick="deleteLast()">⌫ Borrar último</button>
+            <button onclick="clearAll()">🗑 Borrar todo</button>
+            <button onclick="sendCode()">✅ Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
